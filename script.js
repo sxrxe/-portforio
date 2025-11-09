@@ -1,5 +1,5 @@
 // ★★★ "your_secret_password" の部分を、あなただけが知っているパスワードに変更してください
-const MY_PASSWORD = "your_secret_password"; 
+const MY_PASSWORD = "test"; 
 
 /**
  * ページ読み込み時にパスワードを尋ねる関数
