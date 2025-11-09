@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request & Price List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="checkPassword()"> <div id="site-content" style="display:none;"> <header>
+            <nav>
+                <a href="index.html">Portfolio</a>
+                <a href="request.html" class="active">Request & Price</a>
+            </nav>
+        </header>
+
+        <main>
+            <h1>Price List</h1>
+            <p>動画制作料金表です。お見積もり・ご依頼は下記フォームよりご連絡ください。</p>
+
+            <div class="price-table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>内容</th>
+                            <th>料金（税込）</th>
+                            <th>備考</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td colspan="3" class="category-title">🧠 企画・構成</td></tr>
+                        <tr>
+                            <td>企画構成（参考動画あり）</td>
+                            <td>¥4,000／本</td>
+                            <td>トーン・構成を踏襲して作成</td>
+                        </tr>
+                        <tr>
+                            <td>企画構成（ゼロから制作）</td>
+                            <td>¥5,000／本</td>
+                            <td>ネタ提案・構成・シナリオ含む</td>
+                        </tr>
+                        <tr><td colspan="3" class="category-title">🎥 撮影</td></tr>
+                        <tr>
+                            <td>撮影（iPhoneベース）</td>
+                            <td>¥15,000〜／日</td>
+                            <td>機材費込み（簡易セット）</td>
+                        </tr>
+                        <tr>
+                            <td>ロケ地・交通費</td>
+                            <td>実費</td>
+                            <td>必要に応じて別途お見積り</td>
+                        </tr>
+                        <tr><td colspan="3" class="category-title">✂️ 編集</td></tr>
+                        <tr>
+                            <td>ショート動画編集（文字入れメイン）</td>
+                            <td>¥3,500／本</td>
+                            <td>例：参考動画アニメーションなし・文字入れ＋BGM＋素材差し込み可</td>
+                        </tr>
+                        <tr>
+                            <td>縦型編集（Shorts／Reels／TikTok）</td>
+                            <td>¥5,000〜／本</td>
+                            <td>カット・BGM・テロップ・整音含む（簡易演出あり）</td>
+                        </tr>
+                        <tr>
+                            <td>横型編集（YouTube通常動画）</td>
+                            <td>¥10,000〜／本</td>
+                            <td>長尺向け・整音・色調整含む</td>
+                        </tr>
+                        <tr>
+                            <td>└ ナレーション付き（15分まで）</td>
+                            <td>¥15,000／本</td>
+                            <td>AI音声 or 実ナレーション対応可</td>
+                        </tr>
+                         <tr>
+                            <td>└ 15分超過料金</td>
+                            <td>+¥1,000／分</td>
+                            <td>長尺ナレーション動画の場合</td>
+                        </tr>
+                        <tr>
+                            <td>モーショングラフィックス追加</td>
+                            <td>+¥5,000</td>
+                            <td>AE演出・アニメーションタイトル等</td>
+                        </tr>
+                        <tr><td colspan="3" class="category-title">🖼️ サムネイル制作</td></tr>
+                        <tr>
+                            <td>静止画サムネイル制作</td>
+                            <td>¥2,000／枚</td>
+                            <td>タイトル・文字デザイン込み</td>
+                        </tr>
+                        <tr>
+                            <td>パターン化・差分対応</td>
+                            <td>¥1,000／枚</td>
+                            <td>色・文言変更などの軽微修正</td>
+                        </tr>
+                        <tr><td colspan="3" class="category-title">💾 納品・修正</td></tr>
+                        <tr>
+                            <td>修正対応</td>
+                            <td>2回まで無料</td>
+                            <td>3回目以降 +¥2,000／回</td>
+                        </tr>
+                        <tr>
+                            <td>納期短縮（特急対応）</td>
+                            <td>+¥5,000〜</td>
+                            <td>通常3日→当日／翌日納品など</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h2>Request Form</h2>
+            
+            <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID_HERE" method="POST">
+                <label>
+                    お名前:
+                    <input type="text" name="name" required>
+                </label>
+                <label>
+                    メールアドレス:
+                    <input type="email" name="email" required>
+                </label>
+                <label>
+                    ご依頼内容:
+                    <textarea name="message" rows="5" required></textarea>
+                </label>
+                <button type="submit">送信</button>
+            </form>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

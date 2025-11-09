@@ -1,0 +1,152 @@
+/* 基本設定 */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #121212; /* 暗い背景色 */
+    color: #E0E0E0; /* 明るいテキスト色 */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* サイト全体のコンテナ */
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+h1, h2 {
+    color: #FFFFFF;
+    border-bottom: 2px solid #555;
+    padding-bottom: 10px;
+}
+
+/* ヘッダーとナビゲーション（タブ） */
+header {
+    background-color: #1F1F1F;
+    border-bottom: 1px solid #333;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav a {
+    color: #AAA;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin: 0 15px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: #FFF;
+    background-color: #333;
+}
+
+nav a.active {
+    color: #FFF;
+    font-weight: bold;
+}
+
+/* 動画のレスポンシブ対応 */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 アスペクト比 */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+    margin-bottom: 20px;
+    border-radius: 8px; /* 少し角を丸める */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* 料金表 */
+.price-table-container {
+    overflow-x: auto; /* スマホで横スクロール可能に */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+}
+
+th, td {
+    border: 1px solid #444;
+    padding: 12px 15px;
+    text-align: left;
+    vertical-align: top;
+}
+
+th {
+    background-color: #252525;
+    color: #FFF;
+}
+
+/* カテゴリ行のスタイル */
+td.category-title {
+    background-color: #2a2a2a;
+    font-weight: bold;
+    color: #FFF;
+}
+
+td:first-child {
+    font-weight: bold;
+    width: 40%; /* 内容列の幅を調整 */
+}
+
+td:nth-child(2) {
+    width: 25%; /* 料金列の幅を調整 */
+}
+
+
+/* フォーム */
+#contact-form {
+    background: #1F1F1F;
+    padding: 25px;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+#contact-form label {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+    width: 95%;
+    padding: 10px;
+    background: #333;
+    border: 1px solid #555;
+    color: #FFF;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+#contact-form button {
+    background-color: #E0E0E0;
+    color: #121212;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact-form button:hover {
+    background-color: #FFF;
+}
